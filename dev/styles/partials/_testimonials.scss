@@ -1,0 +1,121 @@
+.testimonials-section {
+	background-color: $firstBackground;
+	padding-top: 130px;
+}
+
+.testimonial-flexWrap {
+	display: flex;
+}
+
+.testimonial-box {
+	background: $secondBackground;
+	box-shadow: 2px 2px 2px darken($firstBackground, 5);
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33.3%;
+	margin: 0 15px;
+	margin-top: 80px;
+	padding: 40px 10px;
+	line-height: 26px;
+	font-weight: 300;
+	transition: all 0.5s;
+	&:hover {
+		transform: translateY(-10px);
+		box-shadow: 2px 5px 11px 5px darken($firstBackground, 5);
+	}
+	blockquote {
+		text-align: center;
+		position: relative;
+		line-height: 26px;
+		padding: 15px 0;
+		&:after, 
+		&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 200px;
+		height: 1.5px;
+		background-color: darken($firstBackground, 10);
+
+		&:before {
+			top: 0;
+		}
+
+		&:after {
+			bottom: 0;
+		}
+		}
+	}
+	figure {
+		margin-bottom: 10px;
+		img {
+			max-width: 100%;
+			border-radius: 50%;
+			border: 5px solid darken($firstBackground, 2);
+		}
+	}
+
+	> p {
+		text-transform: uppercase;
+		margin: 0;
+		letter-spacing: 1.4px;
+	}
+
+	.name-testimonial {
+		color: darken($secondaryColor, 5);
+	}
+
+	.company {
+		color: $headerColorDark;
+		font-weight: 400;
+	}
+	> img {
+		margin-top: 20px;
+	}
+}
+
+.brand-icons {
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 0;
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.brand-icons {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.testimonial-flexWrap {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.testimonial-box {
+		width: 75%;
+		margin-top: 40px;
+		blockquote {
+			&:after, 
+			&:before {
+			width: 75%;
+			}
+		}
+	}
+
+
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	.testimonial-box {
+		width: 100%;
+	}
+}

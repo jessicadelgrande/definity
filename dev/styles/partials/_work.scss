@@ -1,0 +1,71 @@
+.work-section {
+	background: $secondBackground;
+	padding-top: 140px;
+	padding-bottom: 100px;
+}
+
+.work-flexWrap {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	a {
+		margin: auto;
+		margin-top: 85px;
+	}
+}
+
+.work-backBox {
+	position: relative;
+	width: calc(33.3% - 20px);
+	margin-right: 10px;
+	&:nth-child(3) {
+		margin-right: 0;
+	}
+}
+
+.back-number {
+	// display: inline-block;
+	color: rgb(235, 235, 235);
+	font-size: 16.753rem;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+	transition: all 0.5s;
+	&:hover {
+		transform: translateY(-10px);
+		text-shadow: 2px 2px 2px darken($firstBackground, 10);
+	}
+}
+
+.work-content {
+	width: 70%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	p {
+		line-height: 26px;	
+	}
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.work-flexWrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.work-backBox {
+		width: 75%;
+	}
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	.work-backBox {
+		width: 90%;
+	}
+}

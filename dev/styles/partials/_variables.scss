@@ -1,10 +1,30 @@
-$primaryFont: 'Francois One', sans-serif;
-$secondaryFont: 'Lato', sans-serif;
+$primaryColor: #fff;
+$secondaryColor: #999;
+$footerColor: #777;
+$headerColorDark: #111;
 
-$colorDk: #0F4E84;
-$colorMd: #D9F0F5;
-$colorLt: #F0F9FE;
+// Linear gradient
+$colorStart: rgba(0,0,0,0.3);
+$colorMid: rgba(0,0,0,0.4);
+$colorEnd: rgba(0,0,0,0.45);
 
+// Font-family
+$primaryFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Montserrat', sans-serif;
+
+// Background color for sections
+$firstBackground: rgb(248, 248, 248);
+$secondBackground: rgb(255, 255, 255);
+
+// Buttons 
+$lightColor: #ececec;
+$darkColor: rgba(0,0,0,0.6);
+
+// Footer background
+$firstFooterBG: #111;
+$secondFooterBG: #222;
+
+// Media
 $sml: ( max: 570px );
 $med: ( max: 680px );
 $lrg: ( max: 750px );

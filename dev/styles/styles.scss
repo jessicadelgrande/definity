@@ -1,2 +1,66 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/header";
+@import "partials/buttons";
+@import "partials/title";
+@import "partials/about";
+@import "partials/work";
+@import "partials/shop";
+@import "partials/service";
+@import "partials/testimonials";
+@import "partials/portfolio";
+@import "partials/inquiry-newsletter";
+@import "partials/blog";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/animate";
+
+html {
+	font-size: 62.5%;
+}
+
+// * {
+// 	border: 1px solid red;
+// }
+
+body {
+	font-size: 1.4rem;
+	font-family: $primaryFont;
+}
+
+h4 {
+	@include fontSize(1.297rem);
+}
+
+h3 {
+	@include fontSize(1.6rem);
+	@media (max-width: 480px) {
+		@include fontSize(calc(1.3rem + (1.6 - 1.3) * ((100vw - 300px) / (480 - 300))))
+	}
+}
+
+p {
+	color: #999;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.overlay {
+	width: 100%;
+	background: linear-gradient(to right, $colorStart, $colorMid, $colorEnd);
+}
 
 

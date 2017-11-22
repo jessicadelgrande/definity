@@ -1,0 +1,267 @@
+// header
+header {
+	@include sectionBackground('../../assets/hero.jpg');
+	font-family: $primaryFont;
+	height: 100vh;
+	text-transform: uppercase;
+	position: relative;
+}
+
+h1 {
+	display: none;
+}
+
+.header-overlay {
+	height: 100vh;
+}
+
+.header-wrapper {
+	max-width: 1280px;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	padding-right: 40px;
+}
+
+.navbar-fixed {
+	background: #fff;
+    top: 0;
+    z-index: 10;
+	position: fixed;
+    width: 100%;
+}
+
+.nav-links-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	padding: 0;
+
+	li {
+		position: relative;
+		padding: 0 10px;
+		letter-spacing: 2px;
+
+		a {
+			margin-left: -4px;
+			margin-right: 4px;
+		}
+
+		&:hover .subnav {
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.5s;
+		}
+	}
+
+	a {
+		font-size: 1rem;
+		color: $secondaryColor;
+		transition: all 0.5s;
+
+		&:visited {
+			color: $secondaryColor;
+		}
+
+		&:hover {
+			color: $primaryColor;
+		}
+	}
+
+	&:last-child {
+		padding-left: 40px;
+	}
+}
+
+ul.subnav {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	background: rgba($secondBackground, 0.9);
+	border-left: 5px solid black;
+	border-radius: 2px;
+	li {
+		margin: 0;
+		padding: 5px 2px 5px 10px;
+	}
+	a {
+		font-size: 1rem;
+		color: darken($secondaryColor, 50);
+		transition: all 0.5s;
+		&:visited {
+			color: $secondaryColor;
+		}
+		&:hover {
+			color: lighten($headerColorDark, 10);
+		}
+	}
+}
+
+.burger-nav {
+	display: none;
+	color: white;
+	font-size: 2.7rem;
+	position: relative;
+	z-index: 10;
+}
+
+// header content
+
+h2.hero {
+	margin: 0;
+	font-size: 12rem;
+	font-weight: 700;
+	letter-spacing: 25px;
+	color: $primaryColor;
+	text-shadow: 0.5px 0.5px 0.5px $secondaryColor;
+}
+
+.header-content {
+	margin: auto;
+	text-align: center;
+	h3 {
+		color: $secondaryColor;
+		font-weight: 300;
+		letter-spacing: 1.6px;
+	}
+}
+
+.header-arrows {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header-mouse {
+	border-style: none;
+	background: transparent;
+	align-self: center;
+	padding-bottom: 15px;
+	outline: none;
+	transition: all 0.5s;
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.burger-nav {
+		display: block;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		button {
+			outline: none;
+			font-size: 1.4rem;
+			padding: 10px 15px;
+		}
+	}
+	.nav-links-wrap {
+		display: none;
+	}
+	.nav-links {
+		&:last-child {
+			padding-left: 0;
+		}
+		a {
+			transition: all 0.5s;
+			&:hover {
+				color: $headerColorDark;
+			}
+		}
+		li {
+			&:hover .subnav {
+				display: none;
+			}
+		}
+
+	}
+	.burger {
+		display: flex;
+		position: absolute;
+		// top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $secondBackground;
+	}
+	.navbar-fixed {
+		background: #fff;
+		top: auto;
+	    bottom: 0;
+	    z-index: 10;
+		position: fixed;
+	    width: 100%;
+	}
+
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	header, .header-overlay, .header-wrapper {
+		height: 95vh;
+	}
+	h2.hero {
+	  font-size: calc(8rem + (10 - 8) * ((100vw - 481px) / (768 - 481)));
+	}
+	.header-arrows {
+		visibility: hidden;
+	}
+	.burger {
+		flex-direction: column;
+	}
+	.burger-nav {
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.nav-links {
+		a {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	header, .header-overlay, .header-wrapper {
+		height: 85vh;
+	}
+	.burger {
+		top: auto;
+	}
+	.nav-links {
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		li {
+			border-left: 5px solid black;
+			padding: 10px;
+		}
+		a {
+			font-size: 1.4rem;
+		}
+	}
+	h2.hero {
+	  font-size: calc(5.2rem + (8 - 5.2) * ((100vw - 300px) / (480 - 300)));
+	  letter-spacing: 1.2rem;
+	}
+	.header-mouse {
+		display: none;
+	}
+}

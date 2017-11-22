@@ -1,6 +1,70 @@
-@mixin buttonStyles {
+
+// H3 & H4 & H2.BLOG-POST-TITLE
+
+@mixin fontSize($sizeValue) {
+	font-size: $sizeValue;
+	font-family: $secondaryFont;
+	color: $headerColorDark;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
 }
 
+// H2
+
+@mixin secondTitle($sizeValue, $color) {
+	font-size: $sizeValue;
+	font-family: $secondaryFont;
+	color: $color;
+	font-weight: 300;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+
+// BUTTONS
+@mixin buttonCustom($backGroundColor, $fontColor) {
+	background: $backGroundColor;
+	font-family: $secondaryFont;
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: $fontColor;
+	padding: 15px 40px;
+	border-style: none;
+	transition: all 0.5s;
+}
+
+// BGROUND IMAGE
+
+@mixin sectionBackground($backgroundImage) {
+	background: url($backgroundImage);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	@media (max-width: 480px) {
+		background-attachment: scroll;
+	}
+}
+
+// FOOTER H4 
+
+@mixin footerTitle($sizeValue, $fontColor) {
+	font-size: $sizeValue;
+	font-family: $secondaryFont;
+	color: $fontColor;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+}
+
+// ABOUT BACKROUND IMAGE DIV
+
+@mixin divBGround($backgroundImage, $width, $sizeProperty) {
+	background: url($backgroundImage) no-repeat;
+	background-size: $sizeProperty;
+	background-position: center center;
+	width: $width;
+	height: 100%;
+}
 // media breakpoints
 
 @mixin bp($size) {

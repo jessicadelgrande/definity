@@ -2,20 +2,553 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JS Boiler</title>
-	
+	<meta name=viewport content="width=device-width, user-scalable=no, initial-scale=1">
+	<title>DEFINITY</title>
 	<link rel="stylesheet" href="public/styles/style.css">
-	<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
-	<meta charset="utf-8">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,800" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
+	<!-- HEADER -->
+	<header>
+		<div class="overlay header-overlay">
+			<div class="header-wrapper">
+				<h1>Definity</h1>
+				<nav class="header-nav">
+					<div class="logo-img">
+						<a href="#"><img src="../../assets/logo.png" alt="Website Logo for Definity"></a>
+					</div>
+					<div class="nav-links-wrap">
+						<ul class="nav-links">
+							<li><a href="index.html" class="active-link">Home</a></li>
+							<li class="dropdown">
+								<a href="#">Elements <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Element 1</a></li>
+									<li><a href="#">Element 2</a></li>
+									<li><a href="#">Element 3</a></li>
+									<li><a href="#">Element 4</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a></li>
+							<li class="dropdown">
+								<a href="#">Portfolio <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Portfolio 1</a></li>
+									<li><a href="#">Portfolio 2</a></li>
+									<li><a href="#">Portfolio 3</a></li>
+									<li><a href="#">Portfolio 4</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li class="dropdown">
+								<a href="#">Shop <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Item 1</a></li>
+									<li><a href="#">Item 2</a></li>
+									<li><a href="#">Item 3</a></li>
+									<li><a href="#">Item 4</a></li>
+								</ul>
+							</li>
+						</ul> <!-- end nav-links ul -->
 
-	<!-- scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+						<ul class="nav-links">
+							<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+							<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
+							<li><a href="#">EN</a></li>
+						</ul> <!-- end nav-links2 ul -->
+					</div> <!-- end nav-links-wrap div -->
+					<div class="burger-nav">
+						<button class="button-light">&#9776;</button>
+					</div>
+				</nav> <!-- end header-nav -->
+
+				<div class="header-content">
+					<h2 class="hero">Inspire</h2>
+					<h3>Multipage &amp; Onepage HTML5 Templates</h3>
+					<a href="#"><button class="button-light">Learn More</button></a>
+				</div>
+<!-- 				<div class="header-arrows">
+					<a href="#">
+						<button class="button-light arrow">
+							<img src="../../assets/arrows_slim_left.png" alt="">
+						</button>
+					</a>
+					<a href="#">
+						<button class="button-light arrow">
+							<img src="../../assets/arrows_slim_left.png" alt="">
+						</button>
+					</a>
+				</div> -->
+				<button class="header-mouse">
+					<img src="../../assets/basic_magic_mouse.png" alt="Magic Mouse Icon"></a>
+				</button>
+			</div> <!-- end header-wrapper -->
+		</div> <!-- end header-overlay -->
+	</header>
+	<!-- END HEADER -->
+	<main>
+	<!-- ABOUT SECTION -->
+		<section id="about" class="about-section">
+			<div class="wrapper">
+				<div class="title">
+					<h2>What We Do</h2>
+					<p class="title-text">Lorem ipsum dolor sit amet, consectetur</p>
+				</div>
+				<div class="about-box-flexWrap">
+					<div class="about-box">
+						<div class="about-image1">
+						</div>
+						<img src="../../assets/about1.jpg" alt="Vinyl Cover">
+						<div class="about-text">
+							<h4>Item One</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+							<p><a href="#">Learn More</a></p>
+						</div>
+					</div>
+					<div class="about-box">
+						<div class="about-image2">
+						</div>
+						<img src="../../assets/about2.jpg" alt="Estelle Business Cards">
+						<div class="about-text">
+							<h4>Item Two</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+							<p><a href="#">Learn More</a></p>
+						</div>
+					</div>
+					<div class="about-box">
+						<div class="about-image3">
+						</div>
+						<img src="../../assets/about3.jpg" alt="Poster Design">
+						<div class="about-text">
+							<h4>Item Three</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+							<p><a href="#">Learn More</a></p>
+						</div>
+					</div>
+					<div class="about-box">
+						<div class="about-image4">
+						</div>
+						<img src="../../assets/about4.jpg" alt="PSD Mock-up">
+						<div class="about-text">
+							<h4>Item Four</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+							<p><a href="#">Learn More</a></p>
+						</div>
+					</div>
+				</div> <!-- end about-box-wrapper div -->
+			</div> <!-- end wrapper div -->
+		</section>
+		<!-- END ABOUT SECTION -->
+
+		<!-- WORK SECTION -->
+		<section class="work-section">
+			<div class="wrapper">
+				<div class="title">
+					<h2>Our Work Process</h2>
+					<p class="title-text">Lorem ipsum dolor sit amet, consectetur</p>
+				</div>
+				<div class="work-flexWrap">
+					<div class="work-backBox">
+						<p class="back-number">01</p>
+						<div class="work-content">
+							<h3>Design</h3>
+							<p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+						</div>
+					</div>
+					
+					<div class="work-backBox">
+						<p class="back-number">02</p>
+						<div class="work-content">
+							<h3>Develop</h3>
+							<p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+						</div>
+					</div>
+				
+					<div class="work-backBox">
+						<p class="back-number">03</p>
+						<div class="work-content">
+							<h3>Deploy</h3>
+							<p>Lariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+						</div>
+					</div>
+					<a href="#"><button class="button-dark">Get a free quote</button></a>
+				</div> <!-- end work-flex-wrap div -->
+			</div> <!-- end wrapper div -->
+		</section>
+		<!-- END WORK SECTION -->
+	</main>
+	<!-- SHOP SECTION -->
+	<section class="shop-section">
+		<div class="shop-section-wrapper">
+			<div class="shop-name">
+				<div class="shop-box-name shop-box-name-active">
+					<img src="../../assets/basic_bolt.png" alt="Lightning bolt icon">
+					<div class="shop-text">
+						<h3>Lightning Fast</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="shop-box-name shop-box-name-inActive">
+					<img src="../../assets/basic_server2.png" alt="Dedicated server icon">
+					<div class="shop-text">
+						<h3>Dedicated Server</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="shop-box-name shop-box-name-inActive">
+					<img src="../../assets/basic_share.png" alt="Connected 24/7 icon">
+					<div class="shop-text">
+						<h3>Connected 24/7</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="shop-box-contentFlex">
+				<div class="shop-box-content">
+					<h3>Promo Text Here</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+					<a href="#"><button class="button-dark">Get it now</button></a>
+				</div>
+
+				<div class="shop-image">
+					<img src="../../assets/desktop_mockup.jpg" alt="Desktop mockup of lightning fast">
+				</div>
+			</div>
+		</div> <!-- end shop-section-wrapper -->
+	</section>
+	<!-- END SHOP SECTION -->
+
+	<!-- SERVICE SECTION --> <!-- ADD PROGRESS BACKGROUND IMAGE -->
+	<section class="service-section">
+		<div class="overlay">
+			<div class="wrapper service-flexWrap">
+				<figure class="service-icon">
+					<img src="../../assets/progress_02.png" alt="Settings/Tool icon with progress bar">
+					<figcaption>Web Development</figcaption>
+				</figure>
+				<figure class="service-icon">
+					<img src="../../assets/progress_04.png" alt="Desktop computer icon with progress bar">
+					<figcaption>Web Design</figcaption>
+				</figure>
+				<figure class="service-icon">
+					<img src="../../assets/progress_03.png" alt="Camera icon with progress bar">
+					<figcaption>Photography</figcaption>
+				</figure>
+				<figure class="service-icon">
+					<img src="../../assets/progress_01.png" alt="Star icon with progress bar">
+					<figcaption>Marketing</figcaption>
+				</figure>
+			</div> <!-- end wrapper div -->
+		</div> <!-- end overlay -->
+	</section>
+	<!-- END SERVICE SECTION -->
+
+	<!-- TESTIMONIALS SECTION -->
+	<section class="testimonials-section">
+		<div class="wrapper">
+			<div class="title">
+				<h2>What People Say About Us</h2>
+				<p class="title-text">Read some of the testimonials from our amazing clients</p>
+			</div>
+			<div class="testimonial-flexWrap">
+				<div class="testimonial-box">
+					<figure>
+						<img src="../../assets/team-01-circle.jpg" alt="photo of Julian Schmitz from Google">
+					</figure>
+					<blockquote class="testimonial">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+					</blockquote>
+					<p class="name-testimonial">By Julian Schmitz</p>
+					<p class="company">Google</p>
+					<img src="../../assets/quote_32px.png" alt="quotation mark">
+				</div>
+				<div class="testimonial-box">
+					<figure>
+						<img src="../../assets/team-03-circle.jpg" alt="photo of Cecilia Acosta from Apple">
+					</figure>
+					<blockquote class="testimonial">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+					</blockquote>
+					<p class="name-testimonial">By Cecilia Acosta</p>
+					<p class="company">Apple</p>
+					<img src="../../assets/quote_32px.png" alt="quotation mark">
+				</div>
+				<div class="testimonial-box">
+					<figure>
+						<img src="../../assets/team-02-circle.jpg" alt="photo of Gerald Pena from Facebook">
+					</figure>
+					<blockquote class="testimonial">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+					</blockquote>
+					<p class="name-testimonial">By Gerald Pena</p>
+					<p class="company">Facebook</p>
+					<img src="../../assets/quote_32px.png" alt="quotation mark">
+				</div>
+			</div> <!-- end testimonial-wrap div -->
+			<ul class="brand-icons">
+				<li><img src="../../assets/brand_01.jpg" alt="Mountain Brand icon"></li>
+				<li><img src="../../assets/brand_02.jpg" alt="Market Brand icon"></li>
+				<li><img src="../../assets/brand_03.jpg" alt="Chocolate Brand icon"></li>
+				<li><img src="../../assets/brand_04.jpg" alt="MountainBike Brand icon"></li>
+				<li><img src="../../assets/brand_05.jpg" alt="Fisherman Brand icon"></li>
+			</ul>
+		</div> <!-- end wrapper div -->
+	</section>
+	<!-- END TESTIMONIALS SECTION -->
+
+	<!-- PORTFOLIO SECTION -->
+	<section class="portfolio-section">
+		<div class="wrapper">
+			<div class="title">
+				<h2>Some of Our Projects</h2>
+				<p class="title-text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+			</div>
+			<ul class="portfolio-nav">
+				<li><a href="#">All</a></li>
+				<li><a href="#">Webdesign</a></li>
+				<li><a href="#">Print</a></li>
+				<li><a href="#">Photography</a></li>
+			</ul>
+			<ul class="portfolio-gallery">
+				<li>
+					<img src="../../assets/portfolio1.jpg" alt="Vinyl Cover">
+					<div class="portfolio-overlay">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+				<li>
+					<img src="../../assets/portfolio2.jpg" alt="Menu Design">
+					<div class="portfolio-overlay">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+				<li>
+					<img src="../../assets/portfolio3.jpg" alt="Business Cards">
+					<div class="portfolio-overlay">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+				<li>
+					<img src="../../assets/portfolio4.jpg" alt="Logo Design">
+					<div class="portfolio-overlay">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+				<li>
+					<img src="../../assets/portfolio5.jpg" alt="More Logo Design">
+					<div class="portfolio-overlay">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+				<li>
+					<img src="../../assets/portfolio6.jpg" alt="Estelle business cards">
+					<div class="portfolio-overlay title">
+						<h3>Portfolio Name</h3>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- end wrapper div -->
+	</section>
+	<!-- END PORTFOLIO SECTION -->
+	
+	<!-- INQUIRY SECTION --> <!-- ADD GEOMETRIC BACKGROUND IMAGE -->
+	<section class="inquiry-section">
+		<div class="overlay inquiry-overlay">
+			<h2 class="secondary-title">See what we can do for you</h2>
+			<a href="#"><button class="button-light">Get in touch</button></a>
+		</div>
+	</section>
+
+	<!-- BLOG SECTION -->
+	<section class="blog-section">
+		<div class="wrapper">
+			<div class="title">
+				<h2>Latest from our blog</h2>
+				<p class="title-text">Check out our blog to see what we're up to</p>
+			</div>
+			<div class="blog-flexWrap">
+				<div class="blog-box">
+					<div class="blog-image1">	
+					</div>
+					<img src="../../assets/blog1.jpg" alt="">
+					<div class="blog-box-post">
+						<div class="blog-box-text">
+							<ul class="blog-box-details">
+								<li><i class="fa fa-calendar-o" aria-hidden="true"></i> | September 15, 2016</li>
+								<li><i class="fa fa-comments-o" aria-hidden="true"></i> | 12</li>
+							</ul>
+							<h2 class="blog-post-title">Blog Post Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ...</p>
+							<a href="#"><button class="button-dark button-small">Read More</button></a>
+						</div>
+					</div> <!-- end blog-box-post div -->
+					
+				</div> <!-- end blog-box div -->
+				<div class="blog-box">
+					<div class="blog-image2">
+					</div>
+					<img src="../../assets/blog2.jpg" alt="">
+					<div class="blog-box-post">
+						<div class="blog-box-text">
+							<ul class="blog-box-details">
+								<li><i class="fa fa-calendar-o" aria-hidden="true"></i> | September 15, 2016</li>
+								<li><i class="fa fa-comments-o" aria-hidden="true"></i> | 12</li>
+							</ul>
+							<h2 class="blog-post-title">Blog Post Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ...</p>
+							<a href="#"><button class="button-dark button-small">Read More</button></a>
+						</div>
+					</div> <!-- end blog-box-post div -->
+					
+				</div> <!-- end blog-box div -->
+				<div class="blog-box">
+					<div class="blog-image3">
+					</div>
+					<img src="../../assets/blog3.jpg" alt="">
+					<div class="blog-box-post">
+						<div class="blog-box-text">
+							<ul class="blog-box-details">
+								<li>
+									<i class="fa fa-calendar-o" aria-hidden="true"></i> | September 15, 2016
+								</li>
+								<li>
+									<i class="fa fa-comments-o" aria-hidden="true"></i> | 12
+								</li>
+							</ul>
+							<h2 class="blog-post-title">Blog Post Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ...</p>
+							<a href="#"><button class="button-dark button-small">Read More</button></a>
+						</div>
+					</div> <!-- end blog-box-post div -->
+					
+				</div> <!-- end blog-box div -->
+			</div> <!-- end blog wrap div -->
+		</div> <!-- end wrapper div -->
+	</section>
+	<!-- END BLOG SECTION -->
+
+	<section class="newsletter-section">
+		<div class="overlay newsletter-overlay">
+			<h2 class="secondary-title">Join our newsletter</h2>
+			<form action="POST">
+				<input type="email" placeholder="Your email address">
+				<input type="submit" value="JOIN US" class="join button-light">
+			</form>
+		</div>
+	</section>
+
+	<section class="contact-section">
+		<div class="title">
+			<h2>Say Hello</h2>
+			<p class="title-text">We love to discuss your idea</p>
+		</div>
+		<!-- style grayscale -->
+		<div class="map-background">
+			<div class="contact-map-overlay">
+				<div class="contact-map-box">
+					<div class="contact-map-info">
+						<h4>Phone</h4>
+						<p>+123 4567 890</p>
+						<p>+123 7654 098</p>
+					</div>
+					<div class="contact-map-info">
+						<h4>Email</h4>
+						<p>sayhello@email.com</p>
+					</div>
+					<div class="contact-map-link">
+						<a href="#"><img src="../../assets/map-pin_32px.png" alt="map pin"></a>
+						<h4>Show on map</h4>
+					</div>
+				</div> <!-- end contact-map-box -->
+
+				<div class="contact-map-box">
+					<div class="contact-map-info">
+						<h4>Address</h4>
+						<p>1200 Some Street, Il, Us</p>
+					</div>
+					<div class="contact-map-info">
+						<h4>Open Hours</h4>
+						<p>Mon-Fri: 9am-5pm</p>
+						<p>Sat: 10am - 1pm</p>
+					</div>
+				</div> <!-- end contact-map-box -->
+			</div> <!-- end contact-map-overlay -->
+		</div> <!-- end map-background -->
+
+		<form action="POST" class="contact-form">
+			<div class="form-flexWrap">
+				<input type="text" name="name" class="name" placeholder="Enter your name" required="true">
+				<label for="name">Name</label>
+				<input type="text" name="email" class="email" placeholder="Enter your email" required="true">
+				<label for="name">Email*</label>
+			</div>
+			<div class="form-flexWrap">
+				<textarea name="message" class="message" cols="30" rows="6" placeholder="Write your message here..." required="true"></textarea>
+				<label for="message">Textarea</label>
+				<input type="submit" value="Send Message" class="message-send button-dark">
+			</div>
+		</form>
+	</section>
+	<!-- END CONTACT SECTION -->
+
+	<footer class="footer-widgets">
+		<div class="wrapper footerFlex">
+			<div class="footerBox">
+				<h4>About us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+				<ul class="footer-icons">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="footerBox">
+				<h4>Instagram Feed</h4>
+				<div class="instagram-gallery">
+					<img src="../../assets/insta1.jpg" alt="instagram gallery image">
+					<img src="../../assets/insta2.jpg" alt="instagram gallery image">
+					<img src="../../assets/insta3.jpg" alt="instagram gallery image">
+					<img src="../../assets/insta4.jpg" alt="instagram gallery image">
+					<img src="../../assets/insta5.jpg" alt="instagram gallery image">
+					<img src="../../assets/insta6.jpg" alt="instagram gallery image">
+				</div>
+			</div>
+			<div class="footerBox">
+				<h4>Twitter Feed</h4>
+				<div class="twitter-box">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<p>5 Reasons You Should Take a Sabbatical from Creative Work <a href="#">http://enva.to/NTa6F</a> by <a href="#">@envato</a> - AUG 10</p>
+				</div>
+				<div class="twitter-box twitter-active">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<p>What is the enemy of <a href="#">#creativity</a>? <a href="#">http://enva.to/hVl5G</a> [VIDEO] by <a href="#">@envato</a> - AUG 5</p>
+				</div>
+			</div>
+			<div class="footerBox">
+				<h4>Newsletter</h4>
+				<form action="POST" class="newsletter">
+					<input type="email" placeholder="Join our newsletter">
+					<button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div> <!-- end wrapper div -->
+	</footer> <!-- end footer-widgets -->
+	<footer class="copyright">
+		<div class="wrapper copyrightFlex">
+			<p>&copy; 2016 definity. Made by octarinethemes</p>
+			<button class="toTop">To the top</button>
+		</div>
+	</footer>
+
+<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
-	<!-- end scripts -->
+<!-- end scripts -->
+
 </body>
 </html>

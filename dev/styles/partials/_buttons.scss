@@ -1,0 +1,26 @@
+// Light background
+.button-light {
+	@include buttonCustom($lightColor, $headerColorDark);
+	&:hover {
+		background: $darkColor;
+		color: $primaryColor;
+	}
+}
+
+.button-light.arrow {
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	margin-bottom: 1px;
+	&:hover {
+		background: rgba($lightColor, 0.6);
+	}
+}
+
+.button-dark {
+	@include buttonCustom(rgba($darkColor, 1), $lightColor);
+	&:hover {
+		background: $lightColor;
+		color: $headerColorDark;
+	}
+}

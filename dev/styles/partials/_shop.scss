@@ -1,0 +1,135 @@
+.shop-section {
+	background: darken($firstBackground, 2);
+}
+
+.shop-section-wrapper {
+	display: flex;
+	max-width: 100%;
+}
+
+.shop-name {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.shop-box-name {
+	box-shadow: 2px 2px 2px darken($firstBackground, 5);
+	border-radius: 2px;
+	padding: 30px 40px;
+	display: flex;
+	align-items: center;
+	.shop-text {
+		margin-left: 25px;
+		p {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			letter-spacing: 1.8px;
+		}
+	}
+}
+
+.shop-box-name-active {
+	border-left: 10px solid black;
+	box-shadow: none;
+}
+
+.shop-box-name-inActive {
+	background: white;
+	margin-bottom: 2px;
+}
+
+.shop-box-contentFlex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+.shop-box-content {
+	width: 50%;
+	padding: 90px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	p {
+		line-height: 26px;
+		font-weight: 300;
+	}
+	button {
+		margin-top: 20px;
+	}
+}
+
+.shop-image {
+	@include divBGround('../../assets/desktop_mockup.jpg', 50%, contain)
+	img {
+		visibility: hidden;
+		width: 100%;
+	}
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.shop-section-wrapper {
+		flex-direction: column;
+	}
+	.shop-name {
+		flex-direction: row;
+		width: 100%;
+	}
+	.shop-box-name {
+		width: 33.3%;
+		margin-top: 2px;
+		margin-right: 2px;
+		padding: 20px 25px;
+	}
+	.shop-box-contentFlex {
+		width: 100%;
+	}
+
+	.shop-text {
+		h3 {
+			font-size: calc(1.4rem + (1.6 - 1.4) * ((100vw - 768px) / (769 - 940)));
+		}
+		p {
+			font-size: calc(1.1rem + (1.2 - 1.1) * ((100vw - 768px) / (769 - 940)));
+		}
+	}
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.shop-name {
+		flex-direction: column;
+	}
+	.shop-box-name {
+		width: 100%;
+		margin-top: 2px;
+		margin-right: 2px;
+	}
+	.shop-box-content {
+		width: 60%;
+		padding: 50px 0;
+		padding-left: 40px;
+	}
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	.shop-box-contentFlex {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.shop-box-content {
+		width: 100%;
+		padding: 0 40px;
+		padding-top: 50px;
+	}
+
+	.shop-image {
+		width: 100%;
+	}
+}

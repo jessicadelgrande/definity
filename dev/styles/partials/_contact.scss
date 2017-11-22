@@ -1,0 +1,128 @@
+.contact-section {
+	padding-top: 135px;
+}
+
+.map-background {
+	margin-top: 80px;
+	padding: 75px 0;
+	@include sectionBackground('../../assets/google-map-styled.jpg');
+	background-attachment: scroll;
+}
+
+.contact-map-overlay {
+	background: $secondBackground;
+	max-width: 750px;
+	min-height: 345px;
+	padding: 50px 45px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+	font-weight: 300;
+	h4 {
+		font-size: 1.1rem;
+	}
+	p {
+		font-size: 1.2rem;
+		letter-spacing: 1.4px;
+	}
+}
+
+.contact-map-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-map-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// FORM
+
+.contact-form {
+	max-width: 750px;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-flexWrap {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	&:first-child {
+		margin-right: 30px;
+	}
+	.message-send {
+		margin-top: 25px;
+		align-self: flex-end;
+		font-size: 1.4rem;
+	}
+	label {
+		@include fontSize(1.1rem);
+	}
+}
+
+.name, .email, .message {
+	border: 1px solid $lightColor;
+	outline-color: darken($lightColor, 20);
+}
+
+.name, .email {
+	padding: 10px 20px;
+	margin-bottom: 8px;
+	label {
+		margin-bottom: 30px;
+	}
+}
+
+.email {
+	margin-top: 30px;
+}
+
+.message {
+	resize: none;
+	width: 360px;
+	padding: 10px 20px;
+	margin-bottom: 8px;
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.contact-form {
+		padding: 0 25px;
+		flex-direction: column;
+		align-items: center;
+		.message {
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+	.form-flexWrap {
+		width: 80%;
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	.contact-map-overlay {
+		padding: 50px 25px;
+		flex-direction: column;
+	}
+	.message-send {
+		font-size: 1.2rem;
+	}
+	.form-flexWrap {
+		width: 100%;
+	}
+}

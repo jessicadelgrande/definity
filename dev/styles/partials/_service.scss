@@ -1,0 +1,48 @@
+.service-section {
+	@include sectionBackground('../../assets/progress_bg.jpg');
+}
+
+.service-flexWrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 95px 0;
+}
+
+.service-icon {
+	text-align: center;
+	img {
+		margin-bottom: 15px;
+	}
+	figcaption {
+		@include fontSize(1.1rem);
+		color: $primaryColor;
+	}
+}
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.service-icon {
+		width: 25%;
+	}
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.service-flexWrap {
+		padding: 50px 0;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.service-icon {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	.service-icon {
+		width: 100%;
+	}
+}
