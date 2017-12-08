@@ -32,10 +32,11 @@ h1 {
 
 .navbar-fixed {
 	background: #fff;
-    top: 0;
-    z-index: 10;
+	top: 0;
+	left: 0;
+	z-index: 10;
 	position: fixed;
-    width: 100%;
+	width: 100%;
 }
 
 .nav-links-wrap {
@@ -163,7 +164,7 @@ h2.hero {
 	.burger-nav {
 		display: block;
 		position: absolute;
-		bottom: 5px;
+		top: 5px;
 		right: 5px;
 		button {
 			outline: none;
@@ -194,16 +195,15 @@ h2.hero {
 	.burger {
 		display: flex;
 		position: absolute;
-		// top: 0;
-		bottom: 0;
+		top: 0;
 		left: 0;
 		right: 0;
 		background-color: $secondBackground;
 	}
 	.navbar-fixed {
 		background: #fff;
-		top: auto;
-	    bottom: 0;
+		top: 0;
+	    bottom: auto;
 	    z-index: 10;
 		position: fixed;
 	    width: 100%;
